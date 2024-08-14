@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minicontainer{
+  width: 45%;
+  height: 70%;
+  background-color: rgb(28, 28, 65);
+  position: relative;
+}
+.currencys{
+  gap: 15px !important;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 250px; */
+  /* background-color: red; */
+  height: 50px;
+}
+.swap{
+  width: 50px;
+  height: 30px ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue ;
+  font-weight: 600 !important;
+  border-radius: 10px;
+}
+.currency{
+  background-color: rgb(110, 110, 235);
+  border-radius: 8px;
+  color: white;
+  width: 40%;
+  height: 30px;
+  margin-left: 1px;
+  
+}
+.inputvalue{
+  margin-top: 50px;
+  margin-left: 1%;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+.inutfield{
+  width: 99%;
+  height: 40px;
+}
+.value{
+  margin-top: 20px;
+  /* background-color: red; */
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  position: absolute;
+  /* margin-top: 100px !important; */
+  color: white !important;
+  font-weight: 600 !important;
+  background-color: blue !important;
+  height: 45px;
+  width: 98%;
+  border-radius: 10px;
+  bottom: 15px;
+  margin-left: 1% !important;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .minicontainer {
+      width: 90%;
+      height: auto; /* Adjust height to fit content */
+  }
+
+  .currencys {
+      flex-direction: column;
+      gap: 10px;
+      height: auto;
+      margin-top: -80px;
+  }
+
+  .currency, .swap {
+      width: 100%; /* Full width for dropdowns and swap button */
+      margin-left: 0;
+  }
+
+  .swap {
+      margin-top: 10px; /* Add margin to separate from dropdowns */
+      height: 40px; /* Increase button height for better touch experience */
+  }
+
+  .inputvalue {
+      margin-top: 20px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  .value {
+      font-size: 30px;
+      height: auto;
+      margin-top: 10px;
+  }
+
+  .btn {
+      position: static; /* Remove absolute positioning */
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 18px;
+  }
+
+  .value {
+      font-size: 25px;
+  }
+
+  .btn {
+      height: 40px;
+      font-size: 16px;
+      margin-left: 0 !important;
+  }
+}
